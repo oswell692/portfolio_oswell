@@ -250,27 +250,24 @@
                    <!-- Larger Circular Glowing Card Section -->
 <style>
     .circle-card {
-        width: 650px;
-        height: 650px;
-        border-radius: 50%;
+        max-width: 700px;
+        width: 90%;
         background-color: #1a1a1a;
         border: 2px solid red;
-        box-shadow: 0 0 25px rgba(255, 0, 0, 0.7);
-        display: flex;
-        align-items: center;
-        justify-content: center;
         margin: auto;
-        transition: box-shadow 0.3s ease;
+        padding: 25px;
+        transition: transform 0.3s ease, border-color 0.3s ease;
+        border-radius: 20px; /* slight rounded corners */
     }
 
     .circle-card:hover {
-        box-shadow: 0 0 40px rgba(255, 0, 0, 0.9), 0 0 60px rgba(255, 0, 0, 0.7);
+        transform: scale(1.02);
+        border-color: darkred;
     }
 
     .circle-card-body {
         color: white;
         text-align: center;
-        padding: 25px;
         font-size: 1.05rem;
         line-height: 1.7;
         font-family: 'Segoe UI', sans-serif;
@@ -278,13 +275,12 @@
 
     @media (max-width: 700px) {
         .circle-card {
-            width: 90vw;
-            height: 90vw;
+            width: 90%;
+            padding: 18px;
         }
 
         .circle-card-body {
             font-size: 0.95rem;
-            padding: 18px;
         }
     }
 </style>
@@ -299,9 +295,6 @@
     </div>
 </div>
 
-                </div>
-            </div>
-        </div>
     </section>
 
     <!-- Experience Section -->
